@@ -13,12 +13,12 @@
 Щоб запустити **Face Auth App**, потрібно:
 
 1. Перейти до [розділу Releases](https://github.com/VilaTiw/Facial-recognition-system/releases) і завантажити:
-   - `SiameseModel_FineTuned.h5`
-   - `FaceDetectionModel.h5`
+   - `SiameseModel.h5`
+   - `facetracker.h5`
 
-2. Помістити їх у відповідну папку проєкту `Face Auth App`:
-   - `models/SiameseModel_FineTuned.h5`
-   - `models/FaceDetectionModel.h5`
+2. Помістити їх у папку `Face Auth App`:
+   - `Face Auth App/SiameseModel.h5`
+   - `Face Auth App/facetracker.h5`
 
 ## Налаштування MongoDB
 
@@ -33,3 +33,16 @@
 
 ```bash
 pip install -r requirements.txt
+
+## Запуск додатку
+cd "Face Auth App"
+python app.py
+
+> ⚠️ Увага: У коді використовується підключення до камери за індексом 0:
+   cap = cv2.VideoCapture(0) - 16 стрічка коду у файлі app.py папки Face Auth App
+   Якщо у вас кілька камер або вбудована вебкамера недоступна, змініть індекс (наприклад, на 1 або 2) відповідно до конфігурації вашого пристрою.
+
+
+## Автор
+Автор проєкту: VilaTiw
+Зв’язок: пошта - vitalii.lylo@lnu.edu.ua або телеграм - [Telegram: @VilaTiw](https://t.me/VilaTiw)
