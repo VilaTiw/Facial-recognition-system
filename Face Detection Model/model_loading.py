@@ -3,7 +3,7 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.keras.models import load_model
 
-facetracker = load_model("facetracker.h5")
+facetracker = load_model("../Face Auth App/facetracker.h5")
 
 cap = cv2.VideoCapture(0)
 while cap.isOpened():
