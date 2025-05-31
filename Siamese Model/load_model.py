@@ -26,7 +26,7 @@ class L1Dist(Layer):
         return tf.math.abs(tf.convert_to_tensor(input_embedding) - tf.convert_to_tensor(validation_embedding))
 
 # Reload model
-model = tf.keras.models.load_model('models/SiameseModel_FineTuned.h5', custom_objects={'L1Dist': L1Dist, 'BinaryCrossentropy': tf.losses.BinaryCrossentropy})
+model = tf.keras.models.load_model('../Face Auth App/SiameseModel.h5', custom_objects={'L1Dist': L1Dist, 'BinaryCrossentropy': tf.losses.BinaryCrossentropy})
 print(model.summary())
 
 # Verification function
