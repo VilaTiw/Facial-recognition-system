@@ -121,8 +121,9 @@ facetracker = load_model("facetracker.h5")
 #model = tf.keras.models.load_model("SiameseModel.h5", custom_objects={"L1Dist": L1Dist})
 with custom_object_scope({"DistanceLayer": DistanceLayer}):
     # model = tf.keras.models.load_model("../Another Siamese Model/SiameseModel_another_tuned.h5")
-    model = tf.keras.models.load_model("../Siamese Model/models/SiameseModel_another_tuned.h5")
     #model = tf.keras.models.load_model("SiameseModel_more_layers.h5")
+    model = tf.keras.models.load_model("../Face Auth App/SiameseModel.h5")
+
 
 SAVE_PATH = os.path.join("application_data", "input_images", "input_image.jpg")
 cap = cv2.VideoCapture(0)
