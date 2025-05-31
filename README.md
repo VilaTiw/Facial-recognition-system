@@ -32,7 +32,7 @@
 У кореневій папці проєкту виконайте:
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt ```
 
 ## Запуск додатку
 cd "Face Auth App"
