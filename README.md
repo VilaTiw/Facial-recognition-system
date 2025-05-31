@@ -53,4 +53,4 @@ python app.py
 
 ## Автор
 Автор проєкту: Лило Віталій
-Зв’язок: пошта - vitalii.lylo@lnu.edu.ua або телеграм - [Telegram: @VilaTiw](https://t.me/VilaTiw)
+Зв’язок: пошта - vitalii.lylo@lnu.edu.ua та телеграм - [Telegram: @VilaTiw](https://t.me/VilaTiw)
